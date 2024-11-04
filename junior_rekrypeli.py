@@ -9,7 +9,8 @@ def junior_rekrypeli():
             hanki_lisaa_kokemusta = int(input("Hae töitä ja syötä hankkimasi lisäkokemus vuosina: "))
             vaadittu_kokemus = hanki_lisaa_kokemusta + 1  
 
-            print("Et valitettavasti päässyt hankkimaan kokemusta, koska kaikki rekryt oli seniori positioita :( try harder.")
+            if hanki_lisaa_kokemusta < vaadittu_kokemus:
+                print("Et valitettavasti päässyt hankkimaan kokemusta, koska kaikki rekryt oli seniori positioita :( try harder.")
 
     except ValueError:
         print("Anna kokemusvuodet numeroina.")
